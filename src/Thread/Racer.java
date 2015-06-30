@@ -11,7 +11,8 @@ public class Racer implements Runnable
 			if(distance==100&&Thread.currentThread().getName()!=null)
 			{
 				try
-				{				System.out.println("Distance covered by " + Thread.currentThread().getName() + + " is " + distance + "metres");
+				{				
+				System.out.println("Distance covered by " + Thread.currentThread().getName() + " is " + distance + "metres");
 				Thread.sleep(5000);	
 				}
 				

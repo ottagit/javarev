@@ -4,6 +4,7 @@ public class Relay {
 	public static void main(String args[])
 	{
 		Racer rcr = new Racer();
+		//Create thread groups to classify thread objects
 		
 		ThreadGroup grp1 = new ThreadGroup("Group1");
 		ThreadGroup grp2 = new ThreadGroup("Group1");
@@ -11,6 +12,8 @@ public class Relay {
 		ThreadGroup grp4 = new ThreadGroup("Group1");
 		ThreadGroup grp5 = new ThreadGroup("Group1");
 		
+		//Allocate a new thread object
+		//Constructor Thread(ThreadGroup group, Runnable target, String name)
 		Thread t = new Thread(grp1, rcr, "Thread_0");
 		Thread t1 = new Thread(grp1, rcr, "Thread_1");
 		Thread t2 = new Thread(grp2, rcr, "Thread_2");
